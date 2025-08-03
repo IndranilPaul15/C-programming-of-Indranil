@@ -1,0 +1,84 @@
+#include<stdio.h>
+int main()
+{
+	int i,x,a[i],b[9]={0,0,0,0,0,0,0,0,0};
+	printf("Enter how many numbers you want to input: ");
+	scanf("%d",&x);
+	printf("Enter numbers: \n");
+	for(i=0;i<x;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<x;i++)
+	{
+		if(0<a[i]&&9>a[i])
+		{
+			b[0]++;
+		}
+		else
+		{
+			if(10<a[i]&&19>a[i])
+			{
+				b[1]++;
+			}
+			else
+			{
+				if(20<a[i]&&29>a[i])
+				{
+					b[2]++;
+				}
+				else
+				{
+					if(30<a[i]&&39>a[i])
+					{
+						b[3]++;
+					}
+					else
+					{
+						if(40<a[i]&&49>a[i])
+						{
+							b[4]++;
+						}
+						else
+						{
+							if(50<a[i]&&59>a[i])
+							{
+								b[5]++;
+							}
+							else
+							{
+								if(60<a[i]&&69>a[i])
+								{
+									b[6]++;
+								}
+								else
+								{
+									if(70<a[i]&&79>a[i])
+									{
+										b[7]++;
+									}
+									else
+									{
+										if(80<a[i]&&89>a[i])
+										{
+											b[8]++;
+										}
+										else
+										{
+											if(90<a[i]&&100>a[i])
+											{
+												b[9]++;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	printf("In 0 to 9 -> %d student\nIn 10 to 19 -> %d student\nIn 20 to 29 -> %d student\nIn 30 to 39 -> %d student\nIn 40 to 49 -> %d student\nIn 50 to 59 -> %d student\nIn 60 to 69 -> %d student\nIn 70 to 79 -> %d student\nIn 80 to 89 -> %d student\nIn 90 to 100 -> %d student\n",b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8],b[9]);
+	return 0;
+}
